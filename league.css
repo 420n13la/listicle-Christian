@@ -1,0 +1,367 @@
+*{box-sizing:border-box}
+html{
+    
+    background-color:#063062;
+}
+
+body {
+    background-image:linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)),url(images/glitchPattern.jpg);
+    background-attachment: fixed;
+    margin:0px;
+    height:100%;
+    width:100%;
+}
+nav{
+    z-index:1;
+    top:0;
+    position:fixed;
+    font-family:'Multi',sans-serif;
+    border-top:solid black 5px;
+    border-bottom: solid 5px black;
+    height:75px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background-color:#063062;
+    border-radius:0 0 15px 15px;
+}
+
+nav a{
+    color:grey;
+    font-size:15px;
+}
+nav a:hover{
+    text-decoration:none;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    margin-left: -100px;
+    width:70%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.icon{
+    margin-bottom:-7px;
+    height:100%;
+}
+.home{
+    background-color:white;
+    border-radius:100%;
+}
+#size{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:30px;
+}
+.circle{
+    border:1px solid #063062;
+    border-radius:100%;
+}
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+.box .custom-underline::after {
+    top: 100%;
+    height: 2px ;
+    width: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+      transition: 0.4s ease-out all .1s;
+}
+  
+.box:hover .custom-underline::after {
+    top:100%;
+    width: 100%;
+    left: 0%;
+    transition: 0.5s ease all;
+}
+
+header{
+    background-color:#063062;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding-bottom:10px;
+}
+#titlespace{
+    height:500px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)),url(images/backgroundImage.jpg);
+    background-position: center center;
+}
+#profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:'Multi',serif;
+}
+#profileIMG{
+    margin-top:-150px;
+    height:200px;
+    width:200px;
+    border-radius:100%;
+    border:solid 1px white;
+}
+#profileTitle{
+    height:125px;
+    border-top-right-radius:100%;
+    border-top-left-radius:100%;
+    font-size:33px;
+    margin-top:2px;
+    margin-bottom:-75px;
+    color:white;
+    font-size:33px;
+}
+
+#wrapper{
+    border-top:solid 5px black;
+    border-right:solid 30px black;
+    border-left:solid 30px black;
+    padding-left:5%;
+    padding-right:5%;
+    background-image: linear-gradient(rgba(0, 0, 0, .50), 
+    rgba(0, 0, 0, .50)), url(images/leagueBackground.jpeg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    height:5000px;
+    width:80%;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:100px;
+    padding-top:100px;
+    margin-top:-14px;
+}
+#dark{
+    height:100%;
+    background-color:rgba(0, 0, 0, .20);
+    padding-bottom:10%;
+}
+.dark2{
+    background-color:rgba(0, 0, 0, .20);
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:15%;
+    padding:0 30px 0 30px;
+    color:white;
+    font-family:'Titillium Web',serif;
+    font-size:23px;
+    
+}
+.separator1{
+    text-align:right;
+    height:1%;
+    width:100%;
+}
+.separator2{
+    text-align:right;
+    height:2%;
+    width:100%;
+}
+.separator3{
+    text-align:right;
+    height:3%;
+    width:100%;
+}
+#adcsupp{
+    width:80%;
+}
+.support{
+    min-width:200px;
+    float:right;
+    position:relative;
+    top:-129px;
+}
+.top{
+    display:none;
+    color:rgba(255, 255, 255, .75);
+    text-decoration:overline;
+}
+h2{
+    margin-bottom:-5px;
+    font-weight:bold;
+    font-size: 45px;
+    font-family:'Titillium Web',cursive;
+    color:white;
+}
+
+.p2{
+    width:100%;
+    display:inline-block;
+    text-align:center;
+    color:black;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+b{  
+    color:black;
+    background-color:rgba(212, 175, 55, .8);
+    padding-right:2px;
+    padding-left:2px;
+}
+#miniMap{
+    float:right;
+    width:100%;
+    height:40%;
+}
+#heraldDragon{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:100px;
+}
+.dragon{
+    float:right;
+    width:58%;
+    height:100%;
+}
+.herald{
+    float:left;
+    width:45%;
+    height:100%;
+}
+#lane{
+    width:40px;
+}
+
+#turret_inhibs{
+    width:40%;
+}
+#minions{
+    width:50%;
+}
+#space{
+    margin-bottom:75px;
+    width:100%;
+    text-align: center;
+}
+#champions{
+    height:70%;
+    width:70%;
+}
+#video{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:400px;
+    margin-top:30px;
+    
+}
+.video{
+    width:80%;
+    height:100%;
+    border:black solid 5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer{
+    width:100%;
+    height:100px;
+    display:block;
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    border-top:5px black solid;
+    background-color:#063062;
+    color:white;
+}
+#footerWrap{ 
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#063062;
+    height:100%;
+    width:66.6%;
+    border-bottom:#0681C2 5px solid;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+@media only screen and (max-width: 762px){
+    #wrapper{
+        width:100%;
+        height:4600px;
+    }
+    p{
+        font-size:19px;
+    }
+    nav{
+        position: static;
+    }
+    nav ul,nav{
+        flex-direction:column;
+        height:15%;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    nav ul{
+        margin-top:10px;
+        margin-left: -43px;
+    }
+    nav a,.custom-underline{
+        font-size:21px;
+    }
+    #size{
+        display:none;
+    }
+    #champions{
+        height:70%;
+        width:70%;
+        min-width:300px;
+    }
+    #turret_inhibs{
+        width:40%;
+        min-width:300px;
+    }
+    #minions{
+        width:50%;
+        min-width:300px;
+    }
+    .top{
+        display: block;
+    }
+    .support{
+        padding-left:75px;
+        float:right;
+        position:relative;
+        top:-113px;
+    }
+
+}
+/* the sorting of css ends here*/
